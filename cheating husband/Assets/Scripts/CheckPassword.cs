@@ -16,7 +16,6 @@ public class CheckPassword : MonoBehaviour
     {
         if (passwordPanel.text == myPassword)
         {
-            //SceneManager.LoadScene("main_scene");
             loadingScreen.SetActive(true);
             Invoke("NextLevel", 5f);
         }
