@@ -27,6 +27,6 @@ public class CheckPassword : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene("main_scene");
+        SceneManager.LoadScene("ins_scene");
     }
 }
