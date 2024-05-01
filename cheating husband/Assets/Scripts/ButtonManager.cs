@@ -6,6 +6,7 @@ public class ButtonManager : MonoBehaviour
 {
     public GameObject homePage;
     public GameObject messagePage;
+    public GameObject searchPage;
 
     public GameObject abbyPage;
     public GameObject cathyPage;
@@ -21,10 +22,24 @@ public class ButtonManager : MonoBehaviour
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        searchPage.SetActive(false);
     }
 
     public void MessagesButton()
     {
+        messagePage.SetActive(true);
+
+        homePage.SetActive(false);
+        abbyPage.SetActive(false);
+        cathyPage.SetActive(false);
+        zbyPage.SetActive(false);
+        bellaPage.SetActive(false);
+        searchPage.SetActive(false);
+    }
+
+    public void SearchButton()
+    {
+        searchPage.SetActive(true);
         messagePage.SetActive(true);
 
         homePage.SetActive(false);
@@ -43,6 +58,7 @@ public class ButtonManager : MonoBehaviour
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        searchPage.SetActive(false);
     }
 
     public void BellaProfile()
@@ -53,6 +69,7 @@ public class ButtonManager : MonoBehaviour
         messagePage.SetActive(false);
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
+        searchPage.SetActive(false);
     }
 
     public void CathyProfile()
@@ -64,6 +81,7 @@ public class ButtonManager : MonoBehaviour
         abbyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        searchPage.SetActive(false);
     }
 
     public void ZbyProfile()
@@ -75,5 +93,6 @@ public class ButtonManager : MonoBehaviour
         cathyPage.SetActive(false);
         abbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        searchPage.SetActive(false);
     }
 }
