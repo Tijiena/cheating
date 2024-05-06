@@ -12,6 +12,9 @@ public class ButtonManager : MonoBehaviour
     public GameObject cathyPage;
     public GameObject zbyPage;
     public GameObject bellaPage;
+    public GameObject echoPage;
+
+    public GameObject resturantPage;
 
     public void HomeButton()
     {
@@ -23,6 +26,7 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void MessagesButton()
@@ -35,6 +39,7 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void SearchButton()
@@ -42,11 +47,12 @@ public class ButtonManager : MonoBehaviour
         searchPage.SetActive(true);
         messagePage.SetActive(true);
 
-        homePage.SetActive(false);
+        homePage.SetActive(true);
         abbyPage.SetActive(false);
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void AbbyProfile()
@@ -59,6 +65,7 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void BellaProfile()
@@ -70,6 +77,7 @@ public class ButtonManager : MonoBehaviour
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void CathyProfile()
@@ -82,6 +90,7 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
 
     public void ZbyProfile()
@@ -94,5 +103,21 @@ public class ButtonManager : MonoBehaviour
         abbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        resturantPage.SetActive(false);
     }
+
+    public void EchoProfile()
+    {
+        homePage.SetActive(true);
+        echoPage.SetActive(true);
+
+        messagePage.SetActive(false);
+        cathyPage.SetActive(false);
+        zbyPage.SetActive(false);
+        abbyPage.SetActive(false);
+        bellaPage.SetActive(false);
+        searchPage.SetActive(false);
+        resturantPage.SetActive(false);
+    }
+
 }
