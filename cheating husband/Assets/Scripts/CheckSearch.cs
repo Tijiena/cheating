@@ -12,6 +12,7 @@ public class CheckSearch : MonoBehaviour
     public GameObject resturantPage;
     public GameObject searchBox;
     public GameObject chatPage;
+    public GameObject dmPage;
 
     public void CheckInput()
     {
@@ -21,6 +22,7 @@ public class CheckSearch : MonoBehaviour
             resturantPage.SetActive(true);
             searchBox.SetActive(false);
             chatPage.SetActive(false);
+            dmPage.SetActive(false);
             
         }
         else

@@ -7,6 +7,13 @@ public class ButtonManager : MonoBehaviour
     public GameObject homePage;
     public GameObject messagePage;
     public GameObject searchPage;
+    public GameObject dmPage;
+
+    public GameObject abbyDM;
+    public GameObject cathyDM;
+    public GameObject zbyDM;
+    public GameObject bellaDM;
+    public GameObject echoDM;
 
     public GameObject abbyPage;
     public GameObject cathyPage;
@@ -26,18 +33,22 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
+        echoPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
     }
 
     public void MessagesButton()
     {
         messagePage.SetActive(true);
+        dmPage.SetActive(true);
 
         homePage.SetActive(false);
         abbyPage.SetActive(false);
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        echoPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
     }
@@ -46,13 +57,16 @@ public class ButtonManager : MonoBehaviour
     {
         searchPage.SetActive(true);
         messagePage.SetActive(true);
+        dmPage.SetActive(true);
 
         homePage.SetActive(true);
         abbyPage.SetActive(false);
         cathyPage.SetActive(false);
         zbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        echoPage.SetActive(false);
         resturantPage.SetActive(false);
+
     }
 
     public void AbbyProfile()
@@ -66,6 +80,8 @@ public class ButtonManager : MonoBehaviour
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
+        echoPage.SetActive(false);
     }
 
     public void BellaProfile()
@@ -78,6 +94,8 @@ public class ButtonManager : MonoBehaviour
         zbyPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
+        echoPage.SetActive(false);
     }
 
     public void CathyProfile()
@@ -91,6 +109,8 @@ public class ButtonManager : MonoBehaviour
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
+        echoPage.SetActive(false);
     }
 
     public void ZbyProfile()
@@ -102,8 +122,10 @@ public class ButtonManager : MonoBehaviour
         cathyPage.SetActive(false);
         abbyPage.SetActive(false);
         bellaPage.SetActive(false);
+        echoPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
     }
 
     public void EchoProfile()
@@ -118,6 +140,57 @@ public class ButtonManager : MonoBehaviour
         bellaPage.SetActive(false);
         searchPage.SetActive(false);
         resturantPage.SetActive(false);
+        dmPage.SetActive(false);
+    }
+
+    public void AbbyDm()
+    {
+        abbyDM.SetActive(true);
+
+        cathyDM.SetActive(false);
+        zbyDM.SetActive(false);
+        bellaDM.SetActive(false);
+        echoDM.SetActive(false);
+    }
+
+    public void BellaDm()
+    {
+        bellaDM.SetActive(true);
+
+        cathyDM.SetActive(false);
+        zbyDM.SetActive(false);
+        abbyDM.SetActive(false);
+        echoDM.SetActive(false);
+    }
+
+    public void CathyDm()
+    {
+        cathyDM.SetActive(true);
+
+        abbyDM.SetActive(false);
+        zbyDM.SetActive(false);
+        bellaDM.SetActive(false);
+        echoDM.SetActive(false);
+    }
+
+    public void ZbyDm()
+    {
+        zbyDM.SetActive(true);
+
+        cathyDM.SetActive(false);
+        abbyDM.SetActive(false);
+        bellaDM.SetActive(false);
+        echoDM.SetActive(false);
+    }
+
+    public void EchoDm()
+    {
+        echoDM.SetActive(true);
+
+        cathyDM.SetActive(false);
+        zbyDM.SetActive(false);
+        bellaDM.SetActive(false);
+        abbyDM.SetActive(false);
     }
 
 }
